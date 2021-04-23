@@ -1,0 +1,224 @@
+.navbar-nav
+{
+    margin-left: 0;
+}
+
+.navbar-nav a
+{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 16px;
+    padding-left: 15px;
+    color: rgb(38, 38, 38);
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 22px;   
+}
+
+.navbar-toggler-icon
+{
+    position: relative;
+    float: right;
+}
+
+.spotlight-video-overlay
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 80%;
+    height: 46vw;
+    max-height: 900px;
+    max-width: 1600px;
+    border-radius: 20px;
+    transition: opacity 0.2s ease-out;
+    transform: translate(-2%, -8%);
+    cursor: pointer;
+}
+
+.showcase
+{
+    background: black;
+    color: white;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-height: calc(100% - 50px);
+    padding: 200px 50px 200px;
+    overflow: hidden;
+    background-image: url("../images/spotlight-thumbnail.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.featured-video-title 
+{
+    color: white;
+    font-size: 60px;
+    font-weight: 510;
+    margin-bottom: 300px;
+    text-align: center;
+    text-shadow: 0px 0px 32px rgba(0,0,0,0.1);
+}
+
+.footer-container, .footer-bottom-bar 
+{
+    width: 92.3%;
+    max-width: 1070px;
+    margin: auto;
+}
+
+.footer-container 
+{
+    box-sizing: content-box;
+    position: relative;
+    padding: 30px 0 30px;
+    min-height: 195px;
+}
+
+.footer-container .footer-column 
+{
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+    width: 25%;
+    padding-right: 6.25%;
+}
+
+.footer-container .footer-column .footer-column-header 
+{
+    box-sizing: content-box;
+    line-height: 23px;
+    font-weight: 500;
+}
+
+.footer-container .footer-column .footer-column-expand-caret 
+{
+    display: none;
+}
+
+.footer-container .footer-column a 
+{
+    display: table;
+    color: rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+    line-height: 17px;
+    margin-top: 6px;
+}
+.footer-container .footer-column a:hover {
+color: black;
+}
+
+.footer-container .langue-selection-block 
+{
+    position: absolute;
+    box-sizing: border-box;
+    padding: 0 6.25% 15px 0;
+    bottom: 15px;
+    width: 25%;
+}
+
+.footer-container .langue-selection-block .langue-header 
+{
+    font-weight: 500;
+}
+
+.footer-bottom-bar a 
+{
+    line-height: 56px;
+    margin-right: 40px;
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 767px) 
+{
+    .footer-container,
+    .footer-bottom-bar 
+    {
+        width: 100%;
+        padding: 0;
+        max-width: none;
+    }
+
+    .footer-container .footer-column 
+    {
+        padding: 0;
+        width: 100%;
+    }
+
+    .footer-container .footer-column a,
+    .footer-container .footer-column .footer-column-header 
+    {
+        margin-top: 0;
+        padding: 10px 40px;
+        width: calc(100% - 80px);
+        line-height: 25px;
+    }
+
+    .footer-container .footer-column .footer-column-header,
+    .footer-container .langue-selection-block 
+    {
+        border-top: solid 1px #D4D4D4;
+    }
+
+    .footer-container .footer-column .footer-column-header 
+    {
+        cursor: pointer;
+        background-color: white;
+    }
+
+    .footer-container .footer-column .footer-column-expand-caret 
+    {
+        display: block;
+        position: absolute;
+        left: 16px;
+        top: 15px;
+        width: 15px;
+        height: 20px;
+        transform-origin: 55% 45%;
+        cursor: pointer;
+    }
+    .footer-container .footer-column.expanded .footer-column-expand-caret 
+    {
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+    }
+
+    .footer-container .footer-column a 
+    {
+        font-weight: 600;
+        color: black;
+        border-top: solid 1px #E5E5E5;
+        display: none;
+    }
+    .footer-container .footer-column.expanded a 
+    {
+        display: block;
+        box-sizing: content-box;
+    }
+
+    .footer-container .langue-selection-block 
+    {
+        position: static;
+        width: 100%;
+        height: inherit;
+        top: inherit;
+        padding: 14px 20px 15px;
+    }
+
+    .footer-bottom-bar a
+    {
+        display: block;
+        line-height: 45px;
+        margin-right: 0;
+        padding-left: 20px;
+        border-bottom: solid 1px #D4D4D4;
+    }
+}
